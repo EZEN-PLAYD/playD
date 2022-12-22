@@ -59,6 +59,7 @@ addEventListener('scroll',()=>{
 
 console.log(window.pageYOffset)
 console.log(window.innerHeight)
+
 /* service */
 let serviceBottom = service.getBoundingClientRect().bottom;
 const serviceBox = document.querySelectorAll('.content_service_wrap_box');
@@ -72,3 +73,12 @@ addEventListener('scroll',()=>{
         }
     }
 })
+
+
+/* perfomance */
+
+const boxItem = document.querySelector('.content_performance_left');
+const item = document.querySelector('.left_box');
+
+boxItem.addEventListener('mouseover', () => { item.classList.add('.left_box_visible')});
+boxItem.addEventListener('mouseout', () => { item.classList.remove('.left_box_visible')});

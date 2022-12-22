@@ -225,6 +225,7 @@ body {
   font-weight: 600;
   color: #ea2126;
   text-transform: uppercase;
+  font-family: "Basic-Sans-Regular";
 }
 .sub_title {
   margin-bottom: 20px;
@@ -275,6 +276,7 @@ body {
   padding-left: 2px;
   padding-top: 35px;
   font-weight: 18px;
+  font-family: "NotoSans-Medium";
 }
 /* history_wrapper */
 
@@ -384,19 +386,22 @@ body {
   font-weight: bold;
   margin-bottom: 67.5px;
   font-size: 40px;
-  font-family: "맑은 고딕";
+  font-family: "Basic-Sans-Regular";
 }
 #mySwiper .history_description {
   padding-left: 87.5px;
   font-size: 18px;
   color: #000000;
   margin-top: 15px;
+  font-family: "NotoSans-Regular";
+  font-weight: 500;
 }
 #mySwiper .history_date {
   position: absolute;
   left: 0;
   font-size: 18px;
   color: #666666;
+  font-family: "NotoSans-Regular";
 }
 #mySwiper ul {
   position: absolute;
@@ -411,7 +416,7 @@ body {
   /* font-family: "NotoSans-Bold; */
   /* font-family: "NotoSans-DemiLight"; */
   /* font-family: "NotoSans-Medium"; */
-  font-family: "NotoSans-Regular";
+  font-family: "NotoSans-DemiLight";
 }
 #mySwiper li::before {
   display: inline-block;
@@ -496,6 +501,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: "Basic-Sans-Regular";
 }
 #whatwedo_wrapper .sub_title {
   margin-bottom: 20px;
@@ -526,6 +532,7 @@ body {
   margin-bottom: 80px;
   font-size: 40px;
   font-weight: 600;
+  font-family: "Basic-Sans-Regular";
 }
 #whatwedo_wrapper p {
   margin-top: 10px;
@@ -533,6 +540,7 @@ body {
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: -0.03em;
+  font-family: "Basic-Sans-Regular";
 }
 /* clients_wrapper */
 #clients_wrapper {
@@ -543,9 +551,10 @@ body {
 }
 #clients_wrapper .clients_title {
   color: #ea2126;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: "Basic-Sans-Regular";
 }
 
 #clients_wrapper .clients_img {

@@ -68,13 +68,14 @@ addEventListener('scroll',()=>{
         // console.log(serviceBox[0].getBoundingClientRect().top);
         // console.log(innerHeight+150);
         if (serviceBox[i].getBoundingClientRect().top <= innerHeight - 200){
-            serviceBox[i].style.opacity = 1;
+            serviceBox[i].classList.add('slides');
         }
     }
 })
 
 
 /* perfomance */
+
 const boxItem = document.querySelectorAll('.content_performance_left, .content_performance_right');
 boxItem.forEach(item => {
     item.addEventListener('mouseover', () => { 
@@ -103,6 +104,8 @@ boxItem.forEach(item => {
 
 
 /* partner */
+
+
 // let wdH = window.innerHeight;
 // console.log(wdH)
 // window.addEventListener('resize', () => {
@@ -121,3 +124,19 @@ window.addEventListener('scroll', () => {
 
 })
 
+const swiperr = new Swiper('#swiper',{
+    loop: true,
+	spaceBetween: 20,
+	autoplay: {
+		delay: 1,
+		disableOnInteraction: false
+	},
+	slidesPerView: 'auto',
+	speed: 12000,
+	grabCursor: true,
+	mousewheelControl: true,
+	keyboardControl: true,
+	observer: true,
+	observeParents: true,
+    watchSlidesProgress: false,
+});

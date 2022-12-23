@@ -48,17 +48,16 @@ let service = document.querySelector('#content .content_service')
 let serviceTop = service.getBoundingClientRect().top;
 
 // console.log(serviceRect)
-console.log(scrollY);
+// console.log(scrollY);
 addEventListener('scroll',()=>{
-    if (scrollY >= serviceTop){
+    if (window.pageYOffset >= serviceTop){
         Top.classList.add('on')
-    } else if (scrollY < serviceTop){
+    } else if (window.pageYOffset < serviceTop){
         Top.classList.remove('on')
     }
 });
 
-console.log(window.pageYOffset)
-console.log(window.innerHeight)
+// console.log(window.innerHeight)
 
 /* service */
 let serviceBottom = service.getBoundingClientRect().bottom;
@@ -76,9 +75,49 @@ addEventListener('scroll',()=>{
 
 
 /* perfomance */
+const boxItem = document.querySelectorAll('.content_performance_left, .content_performance_right');
+boxItem.forEach(item => {
+    item.addEventListener('mouseover', () => { 
+        item.classList.add('box_visible')
+    });
+    item.addEventListener('mouseout', () => {
+        item.classList.remove('box_visible')
+    });
+    // item.querySelector('.left_title_box').addEventListener('focus', () => {item.classList.add('item--is-visible');})
+    // item.querySelector('.left_title_box').addEventListener('!focus', () => {item.classList.remove('item--is-visible');})
+})  
 
-const boxItem = document.querySelector('.content_performance_left');
-const item = document.querySelector('.left_box');
 
-boxItem.addEventListener('mouseover', () => { item.classList.add('left_box_visible')});
-boxItem.addEventListener('mouseout', () => { item.classList.remove('left_box_visible')});
+// const listItem = document.querySelectorAll('.accordian_item');
+// listItem.forEach(item=>{
+//     item.addEventListener('mouseenter', () => {
+//         listItem.forEach(list => {
+//             list.classList.remove('.accordian_active');
+//         });
+//         let result = item.classList.contains('accordian_active')
+//         !result ? item.classList.add('accordian_active') : item.classList.remove('accordian_active');
+//     });
+//     item.addEventListener('mouseleave', () => {
+//         list.forEach(list =>{ list.classList.remove('.accordian_active')})
+// });
+
+
+/* partner */
+// let wdH = window.innerHeight;
+// console.log(wdH)
+// window.addEventListener('resize', () => {
+//     wdH = window.innerHeight;
+// })
+// console.log(wdH)
+
+window.addEventListener('scroll', () => {
+    const graph = document.querySelector('.content_partners_wrap');
+    let graphAbt;
+    graphAbt = window.pageYOffset + graph.getBoundingClientRect().top;
+    // console.log(graphAbt);
+    // console.log(window.pageYOffset);
+    // console.log(window.innerHeight);
+    window.pageYOffset > (graphAbt - window.innerHeight) ? graph.classList.add('active') : graph.classList.remove('active') ;
+
+})
+

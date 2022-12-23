@@ -24,29 +24,7 @@
   font-weight: 700;
   font-style: normal;
 }
-@keyframes graphBarIn {
-  0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes graphTextIn {
-  0% {
-    -webkit-transform: translateX(-150px);
-    transform: translateX(-150px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
+
 html,
 body {
   font-family: "NS DL", "Malgun Gothic", Dotum, "돋움", AppleGothicNeoSD,
@@ -416,33 +394,30 @@ body {
 }
 
 #content .content_performance .content_performance_left .left_box {
-  right: 100%;
-}
-#content .content_performance .content_performance_left .left_box {
   z-index: 2;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 0;right: 100%;
   max-width: 67.708%;
   background-color: #f7f7f7;
   transition: all 1.5s ease;
 }
 
 /* left visible */
-#content .content_performance .content_performance_left.left_box_visible .left_box {
+#content .content_performance .content_performance_left.box_visible .left_box  {
   right: 0 !important;
 }
-.content_performance_left.left_box_visible .left_title_box_icon {
+#content .content_performance .content_performance_left.box_visible .left_title_box_icon  {
   transform: rotate(180deg) !important;
 }
 
 /* left active */
-.accordian_active .accordian_content {
+.accordian_item.accordian_active .accordian_content  {
   border-top: 0;
   height: 100%;
 }
-.accordian_active .accordian_title::before {
+.accordian_item.accordian_active .accordian_title::before {
   transform: rotate(255deg);
 }
 
@@ -654,7 +629,9 @@ body {
   background-repeat: no-repeat;
   background-image: url(./images/index/i__arrow_left-white.png);
 }
-
+#content .content_performance .content_performance_right.box_visible .inner_right_box {
+  left: 0 !important;
+}
 /* inner_right */
 #content .content_performance .content_performance_right .inner_right_box {
   position: absolute;
@@ -668,13 +645,13 @@ body {
   align-content: center;
   background-color: #cf2327;
   transition: all 1s ease;
+  z-index: 4;
 }
-.left_box_visible .inner_right_box .right_inner_content {
-  opacity: 1;
+/* box_visible */
+.content_performance_right.box_visible .inner_right_box .right_inner_content {
+  opacity: 1 !important;
 }
-.left_box_visible .inner_right_box {
-  left: 0;
-}
+
 #content
   .content_performance
   .content_performance_right
@@ -686,6 +663,8 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  transition: all 1s ease;
+
 }
 #content
   .content_performance
@@ -703,6 +682,8 @@ body {
   width: 100%;
   height: 630px;
   opacity: 0;
+  transition: all 1s ease;
+
 }
 #content
   .content_performance
@@ -771,7 +752,7 @@ body {
 /* parters */
 
 #content .content_partners {
-  margin: 150px auto;
+  margin: 150px 0 0 auto;
   background: url(./images/index/@bg_partners.jpg) no-repeat 100% / contain;
   width: 100%;
   padding: 0;
@@ -813,7 +794,25 @@ body {
   opacity: 1;
 }
 /* 그래프 애니메이션 */
-
+@keyframes graphBarIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes graphTextIn {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /* graph */
 #content .content_partners .partners_inner .content_partners_wrap .graph_wrap1 {
   display: flex;
@@ -821,13 +820,32 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-#content .content_partners .partners_inner .content_partners_wrap .graph_bar {
+#content .content_partners .partners_inner .content_partners_wrap .graph_bar,
+#content .content_partners .partners_inner .content_partners_wrap .graph_info,
+#content .content_partners .partners_inner .content_partners_wrap .graph_index,
+#content .content_partners .partners_inner .content_partners_wrap .graph_title{
   opacity: 0;
+}
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_title, 
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_index,
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_info{
+  animation: graphTextIn 1s ease forwards;
+}
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_bar {
   animation: graphBarIn 1.5s ease forwards;
 }
-#content .content_partners .partners_inner .content_partners_wrap .graph_title {
-  opacity: 0;
-  animation: graphTextIn 1s ease forwards;
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap1 .graph_title,#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap1 .graph_bar {
+  animation-delay: 0.25s;
+}
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap2 .graph_title,#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap2 .graph_bar {
+  animation-delay: 0.5s;
+  
+}
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap3 .graph_title,#content .content_partners .partners_inner .content_partners_wrap.active .graph_wrap3 .graph_bar {
+  animation-delay: 0.75s;
+}
+#content .content_partners .partners_inner .content_partners_wrap.active .graph_index{
+  animation-delay: 0.9s;
 }
 #content
   .content_partners
@@ -897,7 +915,6 @@ body {
   text-align: end;
   margin-bottom: 15px;
   font-size: 18px;
-  animation-delay: 0.25s;
 }
 #content
   .content_partners
@@ -914,7 +931,6 @@ body {
   margin-left: auto;
   border-radius: 20px;
   position: relative;
-  animation-delay: 0.25s;
 }
 
 #content
@@ -956,7 +972,6 @@ body {
   text-align: end;
   margin-bottom: 15px;
   font-size: 18px;
-  animation-delay: 0.5s;
 }
 #content
   .content_partners
@@ -973,7 +988,6 @@ body {
   margin-left: auto;
   border-radius: 20px;
   position: relative;
-  animation-delay: 0.5s;
 }
 
 #content

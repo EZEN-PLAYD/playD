@@ -430,12 +430,13 @@ body {
 }
 
 /* left visible */
+#content .content_performance .content_performance_left.left_box_visible .left_box {
+  right: 0 !important;
+}
 .content_performance_left.left_box_visible .left_title_box_icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg) !important;
 }
-.content_performance_left.left_box_visible .left_box{
-  right: 0;
-}
+
 /* left active */
 .accordian_active .accordian_content {
   border-top: 0;

@@ -124,7 +124,7 @@ window.addEventListener('scroll', () => {
 
 })
 
-const swiperr = new Swiper('#swiper',{
+const swiper = new Swiper('.swiper_container',{
     loop: true,
 	spaceBetween: 20,
 	autoplay: {

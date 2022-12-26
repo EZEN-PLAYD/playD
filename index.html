@@ -7,15 +7,135 @@
     <title>PLAYD</title>
 
     <!-- reset -->
-    <link rel="stylesheet" href="./style/minireset.min.css">
+    <link rel="stylesheet" href="./common/minireset.min.css" />
     <!-- swiper -->
-    <link rel="stylesheet" href="./style/common/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="./common/swiper-bundle.min.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="./common/style/playD_Fonts.css" />
     <!-- css -->
-    <link rel="stylesheet" href="./style/index.css">
-    
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- header -->
+    <header>
+      <div class="header_container">
+        <article class="header_inner" id="headerInner">
+          <h1 class="header_logo">
+            <a href="../index.html" class="logo" id="logo">플레이디</a>
+          </h1>
+          <ul class="nav" id="nav">
+            <li class="nav_list list1">
+              <h2><a href="#">사업영역</a></h2>
+              <ul class="navmenu" id="navmenu1">
+                <li class="navmenu_link"><a href="#">캠페인전략</a></li>
+                <li class="navmenu_link"><a href="#">미디어전략</a></li>
+                <li class="navmenu_link"><a href="../creative/creative.html">크리에이티브</a></li>
+                <li class="navmenu_link"><a href="#">포트폴리오</a></li>
+                <li class="navmenu_link"><a href="#">수상내역</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list2">
+              <h2><a href="#">솔루션</a></h2>
+              <ul class="navmenu" id="navmenu2">
+                <li class="navmenu_link"><a href="#">tech HUB</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list3">
+              <h2><a href="#">인사이트</a></h2>
+              <ul class="navmenu" id="navmenu3">
+                <li class="navmenu_link"><a href="#">뉴스레터</a></li>
+                <li class="navmenu_link"><a href="#">리포트</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list4">
+              <h2><a href="#">플레이디</a></h2>
+              <ul class="navmenu" id="navmenu4">
+                <li class="navmenu_link"><a href="../about/about.html">ABOUT</a></li>
+                <li class="navmenu_link"><a href="#">IR</a></li>
+                <li class="navmenu_link"><a href="#">윤리경영</a></li>
+                <li class="navmenu_link"><a href="#">ESG</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list5">
+              <h2>인재채용</h2>
+              <ul class="navmenu">
+                <li class="navmenu_link"><a href="#">채용</a></li>
+                <li class="navmenu_link"><a href="#">복리후생</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list6">
+              <h2><a href="#">CONTACT</a></h2>
+            </li>
+            <li class="toggle_btn" id="toggleBtn">
+              <a href="#" type="button"><span></span><i></i></a>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div id="navmenuBg"></div>
+
+      <!-- gnb_header_container -->
+      <div class="gnb_header_container">
+        <article class="header_inner">
+          <div class="inner_bg1"></div>
+          <div class="inner_bg2"></div>
+          <h1 class="header_logo">
+            <a href="#" class="logo">플레이디</a>
+          </h1>
+          <ul class="nav">
+            <li class="nav_list list1">
+              <h2>사업영역</h2>
+              <ul class="navmenu navmenu_list1">
+                <li class="navmenu_link"><a href="#">캠페인전략</a></li>
+                <li class="navmenu_link"><a href="#">미디어전략</a></li>
+                <li class="navmenu_link"><a href="#">크리에이티브</a></li>
+                <li class="navmenu_link"><a href="#">포트폴리오</a></li>
+                <li class="navmenu_link"><a href="#">수상내역</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list2">
+              <h2>솔루션</h2>
+              <ul class="navmenu navmenu_list2">
+                <li class="navmenu_link"><a href="#">tech HUB</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list3">
+              <h2>인사이트</h2>
+              <ul class="navmenu_list">
+                <li class="navmenu_link"><a href="#">뉴스레터</a></li>
+                <li class="navmenu_link"><a href="#">리포트</a></li>
+              </ul>
+            </li>
+            <li class="nav_list list4">
+              <h2>플레이디</h2>
+              <ul class="navmenu navmenu_list4">
+                <li class="navmenu_link"><a href="#">ABOUT</a></li>
+                <li class="navmenu_link"><a href="#">IR</a></li>
+                <li class="navmenu_link"><a href="#">윤리경영</a></li>
+                <li class="navmenu_link"><a href="#">ESG</a></li>
+              </ul>
+            </li>
+
+            <li class="nav_list list5">
+              <h2>인재채용</h2>
+              <ul class="navmenu navmenu_list5">
+                <li class="navmenu_link"><a href="#">채용</a></li>
+                <li class="navmenu_link"><a href="#">복리후생</a></li>
+              </ul>
+            </li>
+
+            <li class="nav_list list6">
+              <h2>Contact</h2>
+            </li>
+            <li class="toggle_btn" id="cancel">
+              <a href="#" type="button">
+                <span class="material-symbols-sharp">close</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </header>
     <div id="container">
       <!-- <div id="header"></div> -->
       <div id="visual">
@@ -35,127 +155,157 @@
       </div>
       <div id="content">
         <section class="content_service">
-            <div class="content_service_wrapper">
-                <div class="content_service_head">
-                  <h3 class="content_service_head_title">
-                    <span class="title_label">SERVICE</span>
-                    플레이디에서 한 번에
-                    <br />
-                    통합 마케팅 캠페인을
-                    <br />
-                    집행하세요.
-                  </h3>
-                  <p class="content_service_head_desc">
-                    ON/OFF 매체를 구분하지 않고 기획, 제작, 운영을
-                    <br />
-                    포함한 모든 마케팅 솔루션을 제공합니다.
-                  </p>
-                  <div class="content_service_head_button">
-                    <a href="#">서비스 확인</a>
-                  </div>
-                </div>
-                <div class="content_service_wrap">
-                  <div class="content_service_wrap_box box1">
-                    <h4 class="box_title">통합 마케팅 캠페인</h4>
-                    <p class="contents_desc">20여년 간 쌓아온 데이터 역량 기반으로 최적화된 매체별 마케팅
-                      전략을 제안</p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box2">
-                    <h4 class="box_title">브랜드 마케팅</h4>
-                    <p class="contents_desc">
-                      소비자 공감을 유도하는 차별화된 브랜드 마케팅 운영전략 제시 및 수행
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box3">
-                    <h4 class="box_title">미디어 컨설팅</h4>
-                    <p class="contents_desc">
-                      국내외 약 400여 개의 상품 매체력과 노하우 바탕의 맞춤형 플래닝 서비스를 제공
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box4">
-                    <h4 class="box_title">퍼포먼스 마케팅</h4>
-                    <p class="contents_desc">
-                      고도화된 데이터 분석 및 전략 개선으로 광고 효율을 극대화
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box5">
-                    <h4 class="box_title">AD Tech</h4>
-                    <p class="contents_desc">
-                      자체 개발 마케팅 솔루션 플랫폼을 지원해 광고주 마케팅 성과를 극대화
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box6">
-                    <h4 class="box_title">ATL/BTL</h4>
-                    <p class="contents_desc">
-                      고객과의 접점 극대화를 위해 광고 집행 목적, 타깃, 예산에 맞는 최적의 ATL/BTL 매체 선정
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box7">
-                    <h4 class="box_title">VIDEO AD</h4>
-                    <p class="contents_desc">
-                      연출·기획·촬영·편집 등 영상의 전 과정을 관여해 감각적인 광고 영상 제작을 지원
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box8">
-                    <h4 class="box_title">크리에이티브</h4>
-                    <p class="contents_desc">
-                      고객 목표 지향적 콘텐츠를 개발하고 영향력 있는 크리에이티브 제작을 지원
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box9">
-                    <h4 class="box_title">미디어커머스</h4>
-                    <p class="contents_desc">
-                      온라인 마케팅 노하우 및 커머스 성공사례를 기반으로 상품 발굴, 브랜딩 유통사업 진행
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                  <div class="content_service_wrap_box box10">
-                    <h4 class="box_title">리서치</h4>
-                    <p class="contents_desc">
-                      자체 데이터와 업종별 리서치를 기반으로 차별화된 마케팅 인사이트를 도출
-                    </p>
-                    <div class="box_button">
-                      <span>자세히보기</span>
-                      <i></i>
-                    </div>
-                  </div>
-                </div>
+          <div class="content_service_wrapper">
+            <div class="content_service_head">
+              <h3 class="content_service_head_title">
+                <span class="title_label">SERVICE</span>
+                플레이디에서 한 번에
+                <br />
+                통합 마케팅 캠페인을
+                <br />
+                집행하세요.
+              </h3>
+              <p class="content_service_head_desc">
+                ON/OFF 매체를 구분하지 않고 기획, 제작, 운영을
+                <br />
+                포함한 모든 마케팅 솔루션을 제공합니다.
+              </p>
+              <div class="content_service_head_button">
+                <a href="#">서비스 확인</a>
+              </div>
             </div>
+            <div class="content_service_wrap">
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box1">
+                  <h4 class="box_title">통합 마케팅 캠페인</h4>
+                  <p class="contents_desc">
+                    20여년 간 쌓아온 데이터 역량 기반으로 최적화된 매체별 마케팅
+                    전략을 제안
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box2">
+                  <h4 class="box_title">브랜드 마케팅</h4>
+                  <p class="contents_desc">
+                    소비자 공감을 유도하는 차별화된 브랜드 마케팅 운영전략 제시
+                    및 수행
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box3">
+                  <h4 class="box_title">미디어 컨설팅</h4>
+                  <p class="contents_desc">
+                    국내외 약 400여 개의 상품 매체력과 노하우 바탕의 맞춤형
+                    플래닝 서비스를 제공
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box4">
+                  <h4 class="box_title">퍼포먼스 마케팅</h4>
+                  <p class="contents_desc">
+                    고도화된 데이터 분석 및 전략 개선으로 광고 효율을 극대화
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box5">
+                  <h4 class="box_title">AD Tech</h4>
+                  <p class="contents_desc">
+                    자체 개발 마케팅 솔루션 플랫폼을 지원해 광고주 마케팅 성과를
+                    극대화
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box6">
+                  <h4 class="box_title">ATL/BTL</h4>
+                  <p class="contents_desc">
+                    고객과의 접점 극대화를 위해 광고 집행 목적, 타깃, 예산에
+                    맞는 최적의 ATL/BTL 매체 선정
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box7">
+                  <h4 class="box_title">VIDEO AD</h4>
+                  <p class="contents_desc">
+                    연출·기획·촬영·편집 등 영상의 전 과정을 관여해 감각적인 광고
+                    영상 제작을 지원
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box8">
+                  <h4 class="box_title">크리에이티브</h4>
+                  <p class="contents_desc">
+                    고객 목표 지향적 콘텐츠를 개발하고 영향력 있는 크리에이티브
+                    제작을 지원
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box9">
+                  <h4 class="box_title">미디어커머스</h4>
+                  <p class="contents_desc">
+                    온라인 마케팅 노하우 및 커머스 성공사례를 기반으로 상품
+                    발굴, 브랜딩 유통사업 진행
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="content_service_wrap_list">
+                <div class="content_service_wrap_list_box box10">
+                  <h4 class="box_title">리서치</h4>
+                  <p class="contents_desc">
+                    자체 데이터와 업종별 리서치를 기반으로 차별화된 마케팅
+                    인사이트를 도출
+                  </p>
+                  <div class="box_button">
+                    <span>자세히보기</span>
+                    <i></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </section>
         <section class="content_performance">
           <div class="content_performance_left">
@@ -195,7 +345,8 @@
                     </div>
                     <div class="accordian_content">
                       <p>
-                        자체 마켓/경쟁사 분석 솔루션과 업종별 리서치를 기반으로 차별화된 마케팅 인사이트 제공 및 전략 도출을 지원합니다.
+                        자체 마켓/경쟁사 분석 솔루션과 업종별 리서치를 기반으로
+                        차별화된 마케팅 인사이트 제공 및 전략 도출을 지원합니다.
                       </p>
                     </div>
                   </div>
@@ -208,7 +359,9 @@
                     </div>
                     <div class="accordian_content">
                       <p>
-                        여러 매체의 광고 운영 및 효과를 한번에 관리하고 자동 통합 보고서를 활용해 최적의 인사이트를 도출할 수 있습니다.
+                        여러 매체의 광고 운영 및 효과를 한번에 관리하고 자동
+                        통합 보고서를 활용해 최적의 인사이트를 도출할 수
+                        있습니다.
                       </p>
                     </div>
                   </div>
@@ -221,7 +374,8 @@
                     </div>
                     <div class="accordian_content">
                       <p>
-                        업계 최다 업종 별, 매체 별 광고 소재 데이터 Pool 보유로 전환 효과 높은 소재를 빠르게 제작 및 Live 가능합니다.
+                        업계 최다 업종 별, 매체 별 광고 소재 데이터 Pool 보유로
+                        전환 효과 높은 소재를 빠르게 제작 및 Live 가능합니다.
                       </p>
                     </div>
                   </div>
@@ -239,14 +393,17 @@
                 Performance
                 <br />
                 Growth
-                <span class="contents_desc">데이터에 공감을 더해 확실한 성과를 만듭니다.</span>
+                <span class="contents_desc"
+                  >데이터에 공감을 더해 확실한 성과를 만듭니다.</span
+                >
               </p>
             </div>
           </div>
           <div class="content_performance_right">
             <div class="right_title_box">
               <p>
-                <span class="right_title_box_icon"></span><!-- 펼쳐보기 -->
+                <span class="right_title_box_icon"></span
+                ><!-- 펼쳐보기 -->
                 Creative
               </p>
             </div>
@@ -254,9 +411,17 @@
               <div class="right_inner">
                 <div class="right_inner_content">
                   <h2>Contents Creative</h2>
-                  <h3>더 나은 퍼포먼스를 위해<br>영향력 있는 콘텐츠를 만듭니다.</h3>
-                  <p>소비자에게 공감을 이끌어내는 브랜디드 콘텐츠를 기획하여 성과를 높이는 크리에이티브를 만들어냅니다. 성과로 이어지는 전환형 크리에이티브를 경험해보세요!</p>
-                  <div class="right_button_wrap"><a href="#" class="right_btn"></a></div>
+                  <h3>
+                    더 나은 퍼포먼스를 위해<br />영향력 있는 콘텐츠를 만듭니다.
+                  </h3>
+                  <p>
+                    소비자에게 공감을 이끌어내는 브랜디드 콘텐츠를 기획하여
+                    성과를 높이는 크리에이티브를 만들어냅니다. 성과로 이어지는
+                    전환형 크리에이티브를 경험해보세요!
+                  </p>
+                  <div class="right_button_wrap">
+                    <a href="#" class="right_btn"></a>
+                  </div>
                 </div>
                 <div class="right_inner_content">
                   <div class="right_img_box"></div>
@@ -282,25 +447,26 @@
               <dl class="graph_wrap1">
                 <dt class="graph_title">누적 취급액</dt>
                 <dd class="graph_bar">
-                  <p class="graph_info">4,516 
+                  <p class="graph_info">
+                    4,516
                     <span class="graph_info_unit">억 원</span>
                   </p>
                 </dd>
               </dl>
               <dl class="graph_wrap2">
-                <dt class="graph_title">연간 광고주 수
-                </dt>
+                <dt class="graph_title">연간 광고주 수</dt>
                 <dd class="graph_bar">
-                  <p class="graph_info">2,846 
+                  <p class="graph_info">
+                    2,846
                     <span class="graph_info_unit">개</span>
                   </p>
                 </dd>
               </dl>
               <dl class="graph_wrap3">
-                <dt class="graph_title">연간 Live 계정 수
-                </dt>
+                <dt class="graph_title">연간 Live 계정 수</dt>
                 <dd class="graph_bar">
-                  <p class="graph_info">76,840
+                  <p class="graph_info">
+                    76,840
                     <span class="graph_info_unit">개</span>
                   </p>
                 </dd>
@@ -333,9 +499,95 @@
         <a href="#"></a>
       </div>
     </div>
-    <script src="./style/common/swiper-bundle.min.js"></script>
-      <!-- js -->
+
+    <!-- footer -->
     
-    <script src="./style/js/index.js"></script>
+    <!-- footer -->
+    <footer>
+      <section class="footer_banner">
+        <div class="banner_inner">
+          <p class="banner_title">플레이디와 함께 멈추지 않는 성장을 경험하세요.</p>
+          <div class="banner_btn">
+            <a href="#" class="btn btn_about">프로젝트 문의</a>
+            <a href="#" target="_blank" class="btn btn_intro">회사 소개서 다운로드</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer_inner">
+        <div class="footer_inner_wrap">
+          <div class="footer_top">
+            <a href="#" class="footer_logo">logo</a>
+            <ul class="footer_nav">
+              <li><a href="#">윤리위반신고</a></li>
+              <span>|</span>
+              <li><a href="#">뉴스레터</a></li>
+              <span>|</span>
+              <li><a href="#">오시는 길</a></li>
+              <span>|</span>
+              <li><a href="#">무료 광고 진단</a></li>
+              <span>|</span>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <ul class="footer_sns">
+              <li>
+                <a href="https://blog.naver.com/nsm_life"
+                  ><img src="../images/creative/common/icons/footer_sns-naverblog.png" alt="네이버"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/playd.inc/"
+                  ><img
+                    src="../images/creative/common/icons/footer_sns-instagram.png"
+                    alt="인스타그램"
+                /></a>
+              </li>
+              <li>
+                <a href="https://"
+                  ><img src="../images/creative/common/icons/footer_sns-youtube.png" alt="유튜브"
+                /></a>
+              </li>
+              <li>
+                <a href="https://"
+                  ><img
+                    src="../images/creative/common/icons/footer_sns-facebook.png"
+                    alt="페이스북"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_bottom">
+            <ul class="footer_contact_left">
+              <li>(주)플레이디</li>
+              <li>대표자 : 이준용 | 사업자등록번호 : 129-86-43885</li>
+              <li>주소 : 경기도 성남시 분당구 황새울로 359번길 11, 5~6층</li>
+              <li>이메일 : <a href="mailto:master@playd.com">master@playd.com</a></li>
+              <li class="copyright">Copyright &copy; PlayD.,Ltd, All rights reserved.</li>
+            </ul>
+            <ul class="footer_contact_right">
+              <li class="contact_title">대표전화</li>
+              <li class="contact_num">1566-3265</li>
+              <li class="contact_time">평일 10:00~17:00</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="top_btn" id="topBtn">
+        <a href="#"
+          >위로가기
+          <img
+            src="../images/creative/dummy/keyboard_arrow_up_FILL0_wght200_GRAD0_opsz48.svg"
+            alt="up"
+          />
+        </a>
+      </section>
+    </footer>
+
+
+    <!-- swiper -->
+    <script src="./common/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./index.js"></script>
   </body>
 </html>

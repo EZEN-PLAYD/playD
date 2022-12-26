@@ -1,3 +1,10 @@
+// header
+const creativeHeader = document.querySelector("#creativeHeader");
+const headerInner = document.querySelector("#headerInner");
+const logo = document.querySelector("#logo");
+
+
+
 /* visual  배경 색, 이미지 전환*/
 window.addEventListener("load", () => {
   const visual = document.querySelector("#container #visual");
@@ -61,7 +68,7 @@ addEventListener("scroll", () => {
 
 /* service */
 let serviceBottom = service.getBoundingClientRect().bottom;
-const serviceBox = document.querySelectorAll(".content_service_wrap_box");
+const serviceBox = document.querySelectorAll(".content_service_wrap_list_box");
 
 addEventListener("scroll", () => {
   for (i = 0; i < serviceBox.length; i++) {
@@ -80,24 +87,30 @@ const boxItem = document.querySelectorAll(
 );
 boxItem.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.classList.add("box_visible")
-  })
+    item.classList.add("box_visible");
+  });
   item.addEventListener("mouseout", () => {
-    item.classList.remove("box_visible")
-  })
+    item.classList.remove("box_visible");
+  });
 });
 
 /* left_box 마우스 이벤트 */
-const listItem = document.querySelectorAll('.accordian_item');
-listItem.forEach(item => {
-    item.addEventListener("mouseenter", () => {
-       listItem.forEach(list => { list.classList.remove('accordian_active');}) // .accordian_active 남아있으면 삭제
-       let result = item.classList.contains('accordian_active');
-       !result ? item.classList.add('accordian_active') : item.classList.remove('accordian_active');
+const listItem = document.querySelectorAll(".accordian_item");
+listItem.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    listItem.forEach((list) => {
+      list.classList.remove("accordian_active");
+    }); // .accordian_active 남아있으면 삭제
+    let result = item.classList.contains("accordian_active");
+    !result
+      ? item.classList.add("accordian_active")
+      : item.classList.remove("accordian_active");
+  });
+  item.addEventListener("mouseleave", () => {
+    listItem.forEach((list) => {
+      list.classList.remove("accordian_active");
     });
-    item.addEventListener('mouseleave', () => {
-       listItem.forEach(list =>{ list.classList.remove('accordian_active');})
-    });
+  });
 });
 
 /* partner */
@@ -114,19 +127,15 @@ window.addEventListener("scroll", () => {
     : graph.classList.remove("active");
 });
 
-
 /* banner swiper */
-const swiper = new Swiper('#swiper',{
-    loop: true,
-	spaceBetween: 20,
-	autoplay: {
-		delay: 1,
-		disableOnInteraction: false // 상호작용시 자동재생 stop
-	},
-	slidesPerView: 'auto',
-	speed: 12000,
-	grabCursor: true,
-	mousewheelControl: true,
-	keyboardControl: true,
-    watchSlidesProgress: false,
+const swiper = new Swiper("#swiper", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false, // 상호작용시 자동재생 stop
+  },
+  slidesPerView: "auto",
+  speed: 12000,
+  grabCursor: true,
 });

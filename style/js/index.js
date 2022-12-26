@@ -86,12 +86,6 @@ boxItem.forEach((item) => {
   item.addEventListener("mouseout", () => {
     item.classList.remove("box_visible")
   })
-//   item.querySelector(".left_title_box").addEventListener("focus", () => {
-//     item.classList.add("box_visible")
-//   })
-//   item.querySelector(".left_title_box").addEventListener("!focus", () => {
-//     item.classList.remove("box_visible")
-//   })
 });
 
 const listItem = document.querySelectorAll('.accordian_item');
@@ -103,7 +97,7 @@ listItem.forEach(item => {
        !result ? item.classList.add('accordian_active') : item.classList.remove('accordian_active');
     });
     item.addEventListener('mouseleave', () => {
-       listItem.forEach(list =>{ list.classList.remove('.accordian_active');})
+       listItem.forEach(list =>{ list.classList.remove('accordian_active');})
     });
 });
 
@@ -130,7 +124,7 @@ const swiper = new Swiper('swiper_container',{
 		delay: 1,
 		disableOnInteraction: false
 	},
-	slidesPerView: 'auto',
+	slidesPerView: 10,
 	speed: 12000,
 	grabCursor: true,
 	mousewheelControl: true,

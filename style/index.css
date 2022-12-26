@@ -417,14 +417,6 @@ body {
   transform: rotate(180deg) !important;
 }
 
-/* left active */
-.accordian_item.accordian_active .accordian_content  {
-  border-top: 0;
-  height: 100%;
-}
-.accordian_item.accordian_active .accordian_title::before {
-  transform: rotate(255deg);
-}
 
 #content
   .content_performance
@@ -479,6 +471,15 @@ body {
   transform: rotate(45deg);
   border-right: 1.5px solid #000000;
   border-bottom: 1.5px solid #000000;
+}
+
+/* left active */
+.accordian_active .accordian_content {
+  border-top: 0 !important;
+  height: 100% !important;
+}
+.accordian_active .accordian_title::before {
+  transform: rotate(225deg) !important;
 }
 #content
   .content_performance
@@ -1032,6 +1033,7 @@ body {
   width: 100%;
   height: auto;
   display: flex;
+  transition-timing-function:linear!important;  
 }
 #banner .banner_blet #swiper .swiper_wrapper .swiper_slide {
   width: 211px;

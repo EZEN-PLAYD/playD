@@ -2,13 +2,18 @@ const creativeHeader = document.querySelector("#creativeHeader");
 const headerInner = document.querySelector("#headerInner");
 const logo = document.querySelector("#logo");
 
+// navigation
 const navList1 = document.querySelector(".nav_list.list1");
 const navList2 = document.querySelector(".nav_list.list2");
 const navList3 = document.querySelector(".nav_list.list3");
 const navList4 = document.querySelector(".nav_list.list4");
 
-const navmenu = document.querySelector(".navmenu");
-const navmenuLink = document.querySelectorAll(".navmenu_link");
+// sub_menu
+const navmenu1 = document.querySelector("#navmenu1");
+const navmenu2 = document.querySelector("#navmenu2");
+const navmenu3 = document.querySelector("#navmenu3");
+const navmenu4 = document.querySelector("#navmenu4");
+
 const navmenuBg = document.querySelector("#navmenuBg");
 
 const toggleBtn = document.querySelector("#toggleBtn");
@@ -111,13 +116,33 @@ addEventListener("scroll", () => {
   if (scrollY > num) {
     logo.style.width = "108px";
     headerInner.classList.add("active");
-    navmenu.style.top = "60px";
-    navmenu.style.height = "60px";
+    // navmenu1
+    navmenu1.style.top = "60px";
+    navmenu1.style.height = "60px";
+    // navmenu2
+    navmenu2.style.top = "60px";
+    navmenu2.style.height = "60px";
+    // navmenu3
+    navmenu3.style.top = "60px";
+    navmenu3.style.height = "60px";
+    // navmenu4
+    navmenu4.style.top = "60px";
+    navmenu4.style.height = "60px";
   } else if (scrollY <= num) {
     logo.style.width = "139px";
     headerInner.classList.remove("active");
-    navmenu.style.top = "100px";
-    navmenu.style.height = "100px";
+    // navmenu1
+    navmenu1.style.top = "100px";
+    navmenu1.style.height = "100px";
+    // navmenu2
+    navmenu2.style.top = "100px";
+    navmenu2.style.height = "100px";
+    // navmenu3
+    navmenu3.style.top = "100px";
+    navmenu3.style.height = "100px";
+    // navmenu4
+    navmenu4.style.top = "100px";
+    navmenu4.style.height = "100px";
   }
 });
 

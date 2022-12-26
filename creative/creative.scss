@@ -100,12 +100,6 @@ header {
               }
             }
           }
-          .list6 {
-            border-bottom: none;
-            h2 {
-              color: #000;
-            }
-          }
         }
         .nav_list:hover::after {
           content: "";
@@ -119,6 +113,16 @@ header {
 
         .list5 {
           display: none;
+        }
+
+        .list6:hover {
+          h2 {
+            color: #000;
+          }
+        }
+        .list6:hover::after {
+          content: "";
+          border-bottom: none;
         }
 
         .toggle_btn {
@@ -197,14 +201,14 @@ main {
       font-family: "Noto Sans KR", sans-serif;
       font-weight: 700;
       .sub_label {
+        font-family: "basic-sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
         margin-bottom: 10px;
         display: block;
-        font-size: 18px;
         line-height: 30px;
-        font-weight: 600;
-        font-family: "basic-sans";
         color: #ea2126;
-        text-transform: uppercase;
       }
       strong {
         color: #ea2126;

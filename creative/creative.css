@@ -91,12 +91,6 @@ header .header_container .header_inner .nav .nav_list:hover .navmenu {
 header .header_container .header_inner .nav .nav_list:hover .navmenu .navmenu_link a {
   color: rgb(136, 136, 136);
 }
-header .header_container .header_inner .nav .nav_list:hover .list6 {
-  border-bottom: none;
-}
-header .header_container .header_inner .nav .nav_list:hover .list6 h2 {
-  color: #000;
-}
 header .header_container .header_inner .nav .nav_list:hover::after {
   content: "";
   width: calc(100% + 20px);
@@ -108,6 +102,13 @@ header .header_container .header_inner .nav .nav_list:hover::after {
 }
 header .header_container .header_inner .nav .list5 {
   display: none;
+}
+header .header_container .header_inner .nav .list6:hover h2 {
+  color: #000;
+}
+header .header_container .header_inner .nav .list6:hover::after {
+  content: "";
+  border-bottom: none;
 }
 header .header_container .header_inner .nav .toggle_btn {
   display: flex;
@@ -182,14 +183,14 @@ main .creative_header h2 {
   font-weight: 700;
 }
 main .creative_header h2 .sub_label {
+  font-family: "basic-sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
-  font-size: 18px;
   line-height: 30px;
-  font-weight: 600;
-  font-family: "basic-sans";
   color: #ea2126;
-  text-transform: uppercase;
 }
 main .creative_header h2 strong {
   color: #ea2126;

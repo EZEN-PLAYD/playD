@@ -43,4 +43,3 @@ const mySwiper = new Swiper("#mySwiper", {
   },
 });
 
-const boxes = document.querySelectorAll("history_box");

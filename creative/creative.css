@@ -36,7 +36,7 @@ header .header_container .header_inner .header_logo .logo {
   width: 139px;
   height: 27px;
   color: transparent;
-  background: url(../images/creative/common/logo-header__filled.png) no-repeat 50%/contain;
+  background: url(../images/creative/common/logo-header__filled.png) no-repeat 50% / contain;
   transition: 0.3s;
 }
 header .header_container .header_inner .nav {
@@ -53,8 +53,9 @@ header .header_container .header_inner .nav .nav_list {
   position: relative;
 }
 header .header_container .header_inner .nav .nav_list h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700; */
+  font-family: "NotoSans-Bold";
   font-size: 18px;
   letter-spacing: -1px;
   display: block;
@@ -76,8 +77,9 @@ header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link {
   margin-right: 30px;
 }
 header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link a {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300; */
+  font-family: "NotoSans-DemiLight";
   font-size: 18px;
   color: rgb(136, 136, 136);
 }
@@ -183,9 +185,9 @@ main .creative_header h2 {
   font-weight: 700;
 }
 main .creative_header h2 .sub_label {
-  font-family: "basic-sans", sans-serif;
-  font-size: 18px;
+  font-family: "basic-sans-Regular";
   font-weight: 600;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
@@ -202,15 +204,17 @@ main .creative_container_row .sub_header {
   margin-bottom: 40px;
 }
 main .creative_container_row .sub_header .sub_header_title {
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700; */
+  font-family: "NotoSans-Bold";
   font-size: 26px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
 }
 main .creative_container_row .sub_header .sub_header_text {
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400; */
+  font-family: "NotoSans-Regular";
   margin-top: 5px;
   font-size: 16px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
 }
 main .creative_container_row .sub_content {
   margin-bottom: 150px;
@@ -227,29 +231,31 @@ main .creative_container_row .sub_content ul li {
 main .creative_container_row .sub_content ul li .img1 {
   width: 100%;
   height: 200px;
-  background: url("../images/creative/sub/img_creative_item_1.png") no-repeat 50%/contain;
+  background: url("../images/creative/sub/img_creative_item_1.png") no-repeat 50% / contain;
 }
 main .creative_container_row .sub_content ul li .img2 {
   width: 100%;
   height: 200px;
-  background: url("../images/creative/sub/img_creative_item_2.png") no-repeat 50%/contain;
+  background: url("../images/creative/sub/img_creative_item_2.png") no-repeat 50% / contain;
 }
 main .creative_container_row .sub_content ul li .img3 {
   width: 100%;
   height: 200px;
-  background: url("../images/creative/sub/img_creative_item_3.png") no-repeat 50%/contain;
+  background: url("../images/creative/sub/img_creative_item_3.png") no-repeat 50% / contain;
 }
 main .creative_container_row .sub_content ul li .sub_content_wrap {
   margin-top: 30px;
   text-align: center;
 }
 main .creative_container_row .sub_content ul li .sub_content_wrap .sub_content_title {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700; */
+  font-family: "NotoSans-Bold";
 }
 main .creative_container_row .sub_content ul li .sub_content_wrap .sub_content_text {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400; */
+  font-family: "NotoSans-Regular";
   margin-top: 10px;
 }
 main .creative_container_colum {
@@ -297,16 +303,18 @@ main .creative_container_colum .creative_content .content_item .item_inner {
   overflow: hidden;
 }
 main .creative_container_colum .creative_content .content_item .item_inner .item_title {
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700; */
+  font-family: "NotoSans-Bold";
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
   font-size: 26px;
 }
 main .creative_container_colum .creative_content .content_item .item_inner .item_text {
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400; */
+  font-family: "NotoSans-Regular";
   color: #fff;
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
 }
 main .creative_container_colum .creative_content .content_item:hover .item_bg {
   width: calc(100% - 30px);
@@ -329,35 +337,35 @@ main .creative_container_colum .creative_content .item1 {
 }
 main .creative_container_colum .creative_content .item1 .item_bg {
   height: 340px;
-  background: url(../images/creative/sub/img_creative_1.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_1.png) no-repeat 50% / cover;
 }
 main .creative_container_colum .creative_content .item2 {
   height: 510px;
 }
 main .creative_container_colum .creative_content .item2 .item_bg {
   height: 510px;
-  background: url(../images/creative/sub/img_creative_2.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_2.png) no-repeat 50% / cover;
 }
 main .creative_container_colum .creative_content .item3 {
   height: 510px;
 }
 main .creative_container_colum .creative_content .item3 .item_bg {
   height: 510px;
-  background: url(../images/creative/sub/img_creative_3.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_3.png) no-repeat 50% / cover;
 }
 main .creative_container_colum .creative_content .item4 {
   height: 510px;
 }
 main .creative_container_colum .creative_content .item4 .item_bg {
   height: 510px;
-  background: url(../images/creative/sub/img_creative_4.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_4.png) no-repeat 50% / cover;
 }
 main .creative_container_colum .creative_content .item5 {
   height: 510px;
 }
 main .creative_container_colum .creative_content .item5 .item_bg {
   height: 510px;
-  background: url(../images/creative/sub/img_creative_5.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_5.png) no-repeat 50% / cover;
 }
 main .creative_container_colum .creative_content .item5 .item_inner .item_title {
   color: #000;
@@ -367,7 +375,7 @@ main .creative_container_colum .creative_content .item6 {
 }
 main .creative_container_colum .creative_content .item6 .item_bg {
   height: 340px;
-  background: url(../images/creative/sub/img_creative_6.png) no-repeat 50%/cover;
+  background: url(../images/creative/sub/img_creative_6.png) no-repeat 50% / cover;
 }
 
 /******************** footer ********************/
@@ -378,7 +386,7 @@ footer {
   /* top_btn */
 }
 footer .footer_banner {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "NotoSans-Bold";
   background-color: #ea2126;
   padding: 60px 0;
   display: flex;
@@ -401,8 +409,9 @@ footer .footer_banner .banner_inner .banner_btn {
   justify-content: space-between;
 }
 footer .footer_banner .banner_inner .banner_btn .btn {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700; */
+  font-family: "NotoSans-Bold";
 }
 footer .footer_banner .banner_inner .banner_btn .btn_about {
   display: block;
@@ -435,8 +444,9 @@ footer .footer_inner .footer_inner_wrap {
   /* footer_bottom */
 }
 footer .footer_inner .footer_inner_wrap .footer_top {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500; */
+  font-family: "NotoSans-Medium";
   font-size: 100%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -446,7 +456,7 @@ footer .footer_inner .footer_inner_wrap .footer_top {
 footer .footer_inner .footer_inner_wrap .footer_top .footer_logo {
   width: 110px;
   height: 100%;
-  background: url(../images/creative/common/logo.png) no-repeat 50%/contain;
+  background: url(../images/creative/common/logo.png) no-repeat 50% / contain;
   text-indent: -9999px;
   margin-right: 25px;
   grid-column: 1/2;
@@ -489,8 +499,9 @@ footer .footer_inner .footer_inner_wrap .footer_top .footer_sns li a img {
   opacity: 0.5;
 }
 footer .footer_inner .footer_inner_wrap .footer_bottom {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400; */
+  font-family: "NotoSans-Regular";
   font-size: 14px;
   width: 100%;
   margin-top: 40px;
@@ -590,7 +601,7 @@ footer .top_btn a img {
 #gnbBtn.active header .gnb_header_container .header_inner .header_logo {
   width: 139px;
   height: 100px;
-  background: url(../images/creative/common/logo.png) no-repeat 50%/contain;
+  background: url(../images/creative/common/logo.png) no-repeat 50% / contain;
   position: absolute;
   left: 50px;
   text-indent: -9999px;
@@ -609,8 +620,9 @@ footer .top_btn a img {
   padding: 0 1vw;
 }
 #gnbBtn.active header .gnb_header_container .header_inner .nav .nav_list h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500; */
+  font-family: "NotoSans-Medium";
   font-size: 40px;
   display: block;
   margin-bottom: 32px;
@@ -622,8 +634,9 @@ footer .top_btn a img {
   margin-bottom: 15px;
 }
 #gnbBtn.active header .gnb_header_container .header_inner .nav .nav_list .navmenu .navmenu_link a {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500; */
+  font-family: "NotoSans-Medium";
   font-size: 18px;
   margin-bottom: 15px;
   display: inline;
@@ -633,7 +646,14 @@ footer .top_btn a img {
   top: 30px;
   right: 50px;
 }
-#gnbBtn.active header .gnb_header_container .header_inner .nav .toggle_btn a .material-symbols-sharp {
+#gnbBtn.active
+  header
+  .gnb_header_container
+  .header_inner
+  .nav
+  .toggle_btn
+  a
+  .material-symbols-sharp {
   font-size: 40px;
   font-weight: bold;
 }

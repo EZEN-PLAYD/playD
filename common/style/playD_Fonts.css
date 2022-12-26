@@ -1,7 +1,7 @@
 /* notoSans */
 @font-face {
   font-family: "NotoSans-Bold";
-  src: url(../font/NotoSans-Bold.woff) format("woff");
+  src: url(../fonts/NotoSans-Bold.woff) format("woff");
 }
 @font-face {
   font-family: "NotoSans-DemiLight";

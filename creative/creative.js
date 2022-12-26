@@ -1,3 +1,4 @@
+// header
 const creativeHeader = document.querySelector("#creativeHeader");
 const headerInner = document.querySelector("#headerInner");
 const logo = document.querySelector("#logo");
@@ -13,14 +14,15 @@ const navmenu1 = document.querySelector("#navmenu1");
 const navmenu2 = document.querySelector("#navmenu2");
 const navmenu3 = document.querySelector("#navmenu3");
 const navmenu4 = document.querySelector("#navmenu4");
-
 const navmenuBg = document.querySelector("#navmenuBg");
 
+// toggle_button
 const toggleBtn = document.querySelector("#toggleBtn");
 const gnbBtn = document.querySelector("#gnbBtn");
 const cancel = document.querySelector("#cancel");
 
-const mainBg = document.querySelector(".main_bg");
+// top_button
+const footer = document.querySelector("footer");
 const topBtn = document.querySelector("#topBtn");
 
 /********************** maouse event **********************/
@@ -151,10 +153,12 @@ addEventListener("scroll", () => {
 
 topBtn.style.display = "none";
 addEventListener("scroll", () => {
-  let bg = mainBg.offsetTop;
-  if (scrollY > bg) {
+  let footerOffsetTop = footer.offsetTop;
+  let clientHt = document.documentElement.clientHeight;
+  let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
+  if (scrollY > result) {
     topBtn.style.display = "block";
-  } else if (scrollY <= bg) {
+  } else if (scrollY <= result) {
     topBtn.style.display = "none";
   }
 });

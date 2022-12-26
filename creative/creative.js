@@ -20,6 +20,9 @@ const toggleBtn = document.querySelector("#toggleBtn");
 const gnbBtn = document.querySelector("#gnbBtn");
 const cancel = document.querySelector("#cancel");
 
+const mainBg = document.querySelector(".main_bg");
+const topBtn = document.querySelector("#topBtn");
+
 /********************** maouse event **********************/
 navList1.style.overflow = "hidden";
 navList2.style.overflow = "hidden";
@@ -143,6 +146,16 @@ addEventListener("scroll", () => {
     // navmenu4
     navmenu4.style.top = "100px";
     navmenu4.style.height = "100px";
+  }
+});
+
+topBtn.style.display = "none";
+addEventListener("scroll", () => {
+  let bg = mainBg.offsetTop;
+  if (scrollY > bg) {
+    topBtn.style.display = "block";
+  } else if (scrollY <= bg) {
+    topBtn.style.display = "none";
   }
 });
 

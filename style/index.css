@@ -195,6 +195,10 @@ body {
     right: 0; */
   width: 65%;
 }
+.slides{
+  opacity: 1 !important;
+  margin-top: 0 !important;
+}
 .content_service .content_service_wrap .content_service_wrap_box {
   z-index: 1;
   position: relative;
@@ -202,9 +206,6 @@ body {
   color: #fff;
   width: 100%;
   border-radius: 24px;
-}
-.slides{
-  opacity: 1 !important;
 }
 .content_service .content_service_wrap .content_service_wrap_box::before {
   z-index: -1;
@@ -245,8 +246,9 @@ body {
   height: 450px;
   margin-left: 40px;
   margin-bottom: 40px;
+  margin-top: 500px;
   padding: 48px;
-  transition: 0.5s ease;
+  transition: 0.75s ease;
 }
 .content_service .content_service_wrap .box1 {
   background: url(./images/index/block1.png) no-repeat 50% / cover;

@@ -944,7 +944,7 @@ header .header_container #navmenuBg {
   margin: 0 auto;
 }
 #content .content_partners .partners_inner .partners_head .partners_head_title {
-  font-family: "NotoSans-DemiLight";
+  font-family: "NotoSans-Bold";
   font-size: 40px;
   line-height: 60px;
 }
@@ -955,7 +955,7 @@ header .header_container #navmenuBg {
   .partners_head_title
   .title_label {
   display: block;
-  font-family: "NotoSans-DemiLight";
+  font-family: "NotoSans-Bold";
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 30px;

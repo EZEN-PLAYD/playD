@@ -36,7 +36,7 @@ header .header_container .header_inner .header_logo .logo {
   width: 139px;
   height: 27px;
   color: transparent;
-  background: url(../images/creative/common/logo-header__filled.png) no-repeat 50% / contain;
+  background: url(../images/header/common/logo-header__filled.png) no-repeat 50% / contain;
   transition: 0.3s;
 }
 header .header_container .header_inner .nav {
@@ -456,7 +456,7 @@ footer .footer_inner .footer_inner_wrap .footer_top {
 footer .footer_inner .footer_inner_wrap .footer_top .footer_logo {
   width: 110px;
   height: 100%;
-  background: url(../images/creative/common/logo.png) no-repeat 50% / contain;
+  background: url(../images/header/common/logo.png) no-repeat 50% / contain;
   text-indent: -9999px;
   margin-right: 25px;
   grid-column: 1/2;
@@ -586,7 +586,7 @@ footer .top_btn a img {
 #gnbBtn.active header .gnb_header_container .header_inner .inner_bg1 {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/creative/common/sitemap.jpg);
+  background-image: url(../images/header/common/sitemap.jpg);
   background-size: cover;
   position: absolute;
   top: 0;
@@ -601,7 +601,7 @@ footer .top_btn a img {
 #gnbBtn.active header .gnb_header_container .header_inner .header_logo {
   width: 139px;
   height: 100px;
-  background: url(../images/creative/common/logo.png) no-repeat 50% / contain;
+  background: url(../images/header/common/logo.png) no-repeat 50% / contain;
   position: absolute;
   left: 50px;
   text-indent: -9999px;

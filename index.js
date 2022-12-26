@@ -51,6 +51,10 @@ window.addEventListener("load", () => {
 });
 /* top_btn */
 const Top = document.querySelector(".top_button");
+const header = document.querySelector('#header');
+const headerBtnA = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::after');
+const headerBtnB = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::before');
+const headerBtnC = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a span');
 let clientHt = document.documentElement.clientHeight;
 let service = document.querySelector("#content .content_service");
 let serviceTop = service.getBoundingClientRect().top;
@@ -59,8 +63,16 @@ let serviceTop = service.getBoundingClientRect().top;
 addEventListener("scroll", () => {
   if (window.pageYOffset >= serviceTop) {
     Top.classList.add("on");
+    header.classList.add("active");
+    headerBtnA.classList.add("active");
+    headerBtnB.classList.add("active");
+    headerBtnC.classList.add("active");
   } else if (window.pageYOffset < serviceTop) {
     Top.classList.remove("on");
+    header.classList.remove("active");
+    headerBtnA.classList.remove("active");
+    headerBtnB.classList.remove("active");
+    headerBtnC.classList.remove("active");
   }
 });
 

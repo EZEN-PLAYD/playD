@@ -28,8 +28,6 @@ body {
 header {
   z-index: 999;
   width: 100%;
-  background-color: transparent;
-  /* border-bottom: 1px solid #dddddd; */
   position: fixed;
   top: 0;
   box-sizing: border-box;
@@ -38,14 +36,23 @@ header {
 header .gnb_header_container {
   display: none;
 }
+header .header_container .header_sticked{
+  background-color: #fff !important;
+  border-bottom: 1px solid #dddddd;
+}
+header .header_container .header_transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
 header .header_container .header_inner {
   height: 100px;
-  background-color: transparent;
-  padding: 0 2.5vw;
-  margin: 0 1vw;
+  padding: 0 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transition: 0.4s;
+  
   /* header_logo */
   /* header_navigation */
 }
@@ -54,16 +61,24 @@ header .header_container .header_inner .header_logo {
   display: flex;
   align-items: center;
 }
+header .header_container .header_inner .header_logo .logo_default {
+  background: url(./images/header/common/logo-header.png) no-repeat 50% / contain;
+}
+header .header_container .header_inner .header_logo .logo_filled {
+  background: url(./images/header/common/logo-header__filled.png) no-repeat 50% / contain;
+}
 header .header_container .header_inner .header_logo .logo {
   width: 139px;
   height: 27px;
   color: transparent;
-  background: url(./images/header/common/logo-header__filled.png) no-repeat 50% / contain;
   transition: 0.3s;
 }
 header .header_container .header_inner .nav {
   height: 100%;
   display: flex;
+}
+header .header_container .header_inner .nav .nav_list:hover {
+  /* overflow: visible; */
 }
 header .header_container .header_inner .nav .nav_list {
   height: 100%;
@@ -73,6 +88,7 @@ header .header_container .header_inner .nav .nav_list {
   align-items: center;
   justify-content: center;
   position: relative;
+  /* overflow: hidden; */
 }
 header .header_container .header_inner .nav .nav_list h2 {
   /* font-family: "Noto Sans KR", sans-serif;
@@ -82,11 +98,15 @@ header .header_container .header_inner .nav .nav_list h2 {
   letter-spacing: -1px;
   display: block;
 }
+header .header_container .header_sticked .nav .nav_list .navmenu.located {
+  display: flex !important;
+}
 header .header_container .header_inner .nav .nav_list .navmenu {
   z-index: 998; 
   width: 100vw;
-  height: 100px;
-  display: flex;
+  height:100%;
+  display: none;
+  /* flex로 변경 예정 */
   flex-direction: row;
   align-items: center;
   position: absolute;
@@ -175,9 +195,10 @@ header .header_container .header_inner .nav .toggle_btn a i::after {
   bottom: 0;
 }
 header .header_container #navmenuBg {
+  z-index: 998;
   box-sizing: border-box;
   width: 100%;
-  height: 0;
+  height: 100px;
   position: absolute;
   top: 100px;
   background-color: #fff;
@@ -1364,7 +1385,7 @@ footer .footer_banner .banner_inner .banner_title::after {
   bottom: 75%;
   width: 39px;
   height: 33px;
-  background:url(./images/common/@icon-contact_us.png) no-repeat 50% / cover;
+  background:url(./images/index/@icon-contact_us.png) no-repeat 50% / cover;
   /* background-position: 0 0; */
 }
 footer .footer_banner .banner_inner .banner_btn {
@@ -1530,21 +1551,29 @@ footer .top_btn a img {
 
 
 /******************** active - js ********************/
-#headerInner.active {
+.header_container.scroll {
   height: 60px;
 }
-header.active{
-  border-bottom: 1px solid #dddddd;
+
+.header_sticked .nav .nav_list .navmenu{
+  top: calc(100% + 1px);
 }
-header .header_container .header_inner .nav .toggle_btn a i::after.active{
+
+header .header_container .header_sticked .nav .nav_list h2 > a{
   color: #000;
 }
-header .header_container .header_inner .nav .toggle_btn a i::before.active{
-  color: #000;
+header .header_container .header_sticked .nav .toggle_btn a i::after{
+  background-color: #000;
 }
-header .header_container .header_inner .nav .toggle_btn a span.active{
-  color: #000;
+header .header_container .header_sticked .nav .toggle_btn a i::before{
+  background-color: #000;
 }
+header .header_container .header_sticked .nav .toggle_btn a span{
+  background-color: #000;
+}
+
+
+
 
 #gnbBtn.active {
   width: 100%;

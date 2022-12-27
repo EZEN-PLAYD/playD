@@ -1,9 +1,3 @@
-//header
-const creativeHeader = document.querySelector("#creativeHeader");
-const headerInner = document.querySelector("#headerInner");
-const logo = document.querySelector("#logo");
-
-
 /* visual  배경 색, 이미지 전환*/
 window.addEventListener("load", () => {
   const visual = document.querySelector("#container #visual");
@@ -50,10 +44,10 @@ window.addEventListener("load", () => {
 });
 /* top_btn */
 const Top = document.querySelector(".top_button a");
-const header = document.querySelector('#header');
-const headerBtnA = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::after');
-const headerBtnB = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::before');
-const headerBtnC = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a span');
+// const header = document.querySelector('#header');
+// const headerBtnA = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::after');
+// const headerBtnB = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::before');
+// const headerBtnC = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a span');
 let clientHt = document.documentElement.clientHeight;
 let service = document.querySelector("#content .content_service");
 let serviceTop = service.getBoundingClientRect().top;
@@ -91,7 +85,7 @@ addEventListener("scroll", () => {
   }
 });
 
-/* perfomance */
+/* perfomance mouse event */
 
 const boxItem = document.querySelectorAll(
   ".content_performance_left, .content_performance_right"
@@ -105,7 +99,7 @@ boxItem.forEach((item) => {
   });
 });
 
-/* left_box 마우스 이벤트 */
+/* left_box mouse event */
 const listItem = document.querySelectorAll(".accordian_item");
 listItem.forEach((item) => {
   item.addEventListener("mouseenter", () => {
@@ -152,8 +146,57 @@ const swiper = new Swiper("#swiper", {
   grabCursor: true,
 });
 
+/* header mouse event */
+//header
+const header = document.querySelector(".header_inner");
+const logo = document.querySelector(".logo");
+
+header.addEventListener("mouseenter", () => {
+  header.classList.replace('header_transparent', 'header_sticked');
+  logo.classList.replace('logo_default','logo_filled');
+});
+header.addEventListener("mouseleave", () => {
+  header.classList.replace('header_sticked', 'header_transparent');
+  logo.classList.replace('logo_filled', 'logo_default');
+});
 
 
+/* header scroll event */
+const headerContainer = document.querySelector('.header_container');
+// let clientHt = document.documentElement.clientHeight;
+// let service = document.querySelector("#content .content_service");
+// let serviceTop = service.getBoundingClientRect().top;
+// console.log(serviceRect)
+// console.log(scrollY);
+addEventListener("scroll", () => {
+  if (window.pageYOffset >= serviceTop) {
+    headerContainer.classList.add("scroll");
+    header.classList.replace('header_transparent', 'header_sticked');
+    logo.classList.replace('logo_default','logo_filled');
+  } else if (window.pageYOffset < serviceTop) {
+    headerContainer.classList.remove("scroll");
+    header.classList.replace('header_sticked', 'header_transparent');
+    logo.classList.replace('logo_filled', 'logo_default');
+  }
+});
+
+/* nav_list mouse over */
+/* const navList = document.querySelectorAll('.nav_list');
+const navMenu = document.querySelectorAll('.navmenu');
+
+navList.forEach((list) => {
+  list.addEventListener('mouseenter', () => {
+    navMenu.forEach((menu) => {
+      menu.classList.add('located');
+    })
+  })
+  list.addEventListener('mouseout',()=>{
+    navMenu.forEach((menu)=>{
+      menu.classList.remove('located');
+    })
+  })
+})
+ */
 /********************** scroll event **********************/
 // addEventListener("scroll", () => {
 //   let num = headerInner.offsetTop;
@@ -204,11 +247,11 @@ const swiper = new Swiper("#swiper", {
 // });
 
 /********************** click event **********************/
-toggleBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  gnbBtn.classList.toggle("active");
-});
-cancel.addEventListener("click", (e) => {
-  e.preventDefault();
-  gnbBtn.classList.remove("active");
-});
+// toggleBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   gnbBtn.classList.toggle("active");
+// });
+// cancel.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   gnbBtn.classList.remove("active");
+// });

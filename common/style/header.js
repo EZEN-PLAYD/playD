@@ -23,7 +23,7 @@ const cancel = document.querySelector("#cancel");
 
 // top_button
 const footer = document.querySelector("footer");
-// const topBtn = document.querySelector("#topBtn");
+const topBtn = document.querySelector("#topBtn");
 
 /********************** maouse event **********************/
 navList1.style.overflow = "hidden";
@@ -151,17 +151,17 @@ addEventListener("scroll", () => {
   }
 });
 
-// topBtn.style.display = "none";
-// addEventListener("scroll", () => {
-//   let footerOffsetTop = footer.offsetTop;
-//   let clientHt = document.documentElement.clientHeight;
-//   let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
-//   if (scrollY > result) {
-//     topBtn.style.display = "block";
-//   } else if (scrollY <= result) {
-//     topBtn.style.display = "none";
-//   }
-// });
+topBtn.style.display = "none";
+addEventListener("scroll", () => {
+  let footerOffsetTop = footer.offsetTop;
+  let clientHt = document.documentElement.clientHeight;
+  let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
+  if (scrollY > result) {
+    topBtn.style.display = "block";
+  } else if (scrollY <= result) {
+    topBtn.style.display = "none";
+  }
+});
 
 /********************** click event **********************/
 toggleBtn.addEventListener("click", (e) => {

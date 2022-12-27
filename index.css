@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url(./common/style/playD_Fonts.css);
-html {
+html{
   scroll-behavior: smooth;
 }
 html,
@@ -28,8 +28,8 @@ body {
 header {
   z-index: 999;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #dddddd;
+  background-color: transparent;
+  /* border-bottom: 1px solid #dddddd; */
   position: fixed;
   top: 0;
   box-sizing: border-box;
@@ -41,11 +41,12 @@ header .gnb_header_container {
 header .header_container .header_inner {
   height: 100px;
   background-color: transparent;
-  padding: 0 2.5vw;
-  margin: 0 1vw;
+  padding: 0 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   transition: 0.4s;
+  align-items: center;
   /* header_logo */
   /* header_navigation */
 }
@@ -58,7 +59,7 @@ header .header_container .header_inner .header_logo .logo {
   width: 139px;
   height: 27px;
   color: transparent;
-  background: url(./images/common/logo-header__filled.png) no-repeat 50% / contain;
+  background: url(./images/header/common/logo-header__filled.png) no-repeat 50% / contain;
   transition: 0.3s;
 }
 header .header_container .header_inner .nav {
@@ -83,7 +84,7 @@ header .header_container .header_inner .nav .nav_list h2 {
   display: block;
 }
 header .header_container .header_inner .nav .nav_list .navmenu {
-  z-index: 1;
+  z-index: 998; 
   width: 100vw;
   height: 100px;
   display: flex;
@@ -99,7 +100,7 @@ header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link {
   margin-right: 30px;
 }
 header .header_container .header_inner .nav .nav_list h2 > a {
-  color: #000;
+  color: #fff;
 }
 header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link a {
   /* font-family: "Noto Sans KR", sans-serif;
@@ -151,7 +152,7 @@ header .header_container .header_inner .nav .toggle_btn a {
 header .header_container .header_inner .nav .toggle_btn a span {
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   position: absolute;
   top: 45%;
 }
@@ -162,7 +163,7 @@ header .header_container .header_inner .nav .toggle_btn a i::before {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   position: absolute;
   top: 0;
 }
@@ -170,7 +171,7 @@ header .header_container .header_inner .nav .toggle_btn a i::after {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   position: absolute;
   bottom: 0;
 }
@@ -946,7 +947,7 @@ header .header_container #navmenuBg {
   margin: 0 auto;
 }
 #content .content_partners .partners_inner .partners_head .partners_head_title {
-  font-family: "NotoSans-Bold";
+  font-family: "NotoSans-DemiLight";
   font-size: 40px;
   line-height: 60px;
 }
@@ -957,7 +958,7 @@ header .header_container #navmenuBg {
   .partners_head_title
   .title_label {
   display: block;
-  font-family: "NotoSans-Bold";
+  font-family: "NotoSans-DemiLight";
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 30px;
@@ -1298,7 +1299,7 @@ header .header_container #navmenuBg {
   background: url(./images/index/mo_logo_20.png) no-repeat 50% / cover;
 }
 
-.top_button a {
+.top_button a{
   position: fixed;
   bottom: 60px;
   width: 50px;
@@ -1424,7 +1425,7 @@ footer .footer_inner .footer_inner_wrap .footer_top {
 footer .footer_inner .footer_inner_wrap .footer_top .footer_logo {
   width: 110px;
   height: 100%;
-  background: url(./images/common/logo.png) no-repeat 50% / contain;
+  background: url(./images/header/common/logo.png) no-repeat 50% / contain;
   text-indent: -9999px;
   margin-right: 25px;
   grid-column: 1/2;
@@ -1533,7 +1534,7 @@ footer .top_btn a img {
 #headerInner.active {
   height: 60px;
 }
-/* header.active{
+header.active{
   border-bottom: 1px solid #dddddd;
 }
 header .header_container .header_inner .nav .toggle_btn a i::after.active{
@@ -1544,7 +1545,7 @@ header .header_container .header_inner .nav .toggle_btn a i::before.active{
 }
 header .header_container .header_inner .nav .toggle_btn a span.active{
   color: #000;
-} */
+}
 
 #gnbBtn.active {
   width: 100%;
@@ -1570,7 +1571,7 @@ header .header_container .header_inner .nav .toggle_btn a span.active{
 #gnbBtn.active header .gnb_header_container .header_inner .inner_bg1 {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/header/common/sitemap.jpg);
+  background-image: url(./images/header/common/sitemap.jpg);
   background-size: cover;
   position: absolute;
   top: 0;

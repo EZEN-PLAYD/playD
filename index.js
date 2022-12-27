@@ -1,4 +1,4 @@
-/* visual  배경 색, 이미지 전환*/
+/* visual  랜덤 배경 색, 이미지 전환 */
 window.addEventListener("load", () => {
   const visual = document.querySelector("#container #visual");
   const visualImg = document.querySelectorAll(".visual_text_img");
@@ -60,6 +60,7 @@ addEventListener("scroll", () => {
 // console.log(window.innerHeight)
 
 /* service */
+//content list box 한개씩 날라오는 스크롤 이벤트 
 let serviceBottom = service.getBoundingClientRect().bottom;
 const serviceBox = document.querySelectorAll(".content_service_wrap_list_box");
 
@@ -74,7 +75,7 @@ addEventListener("scroll", () => {
 });
 
 /* perfomance mouse event */
-
+// 숨겨진 오른쪽 사이드 컨텐츠 나타내기
 const boxItem = document.querySelectorAll(
   ".content_performance_left, .content_performance_right"
 );
@@ -88,6 +89,7 @@ boxItem.forEach((item) => {
 });
 
 /* left_box mouse event */
+// 숨겨진 왼쪽 사이드 컨텐츠 나타내기
 const listItem = document.querySelectorAll(".accordian_item");
 listItem.forEach((item) => {
   item.addEventListener("mouseenter", () => {
@@ -107,7 +109,7 @@ listItem.forEach((item) => {
 });
 
 /* partner */
-/* 순차적으로 나오는 페이드 효과 */
+/* 그래프 순차적으로 나오는 페이드 효과 */
 window.addEventListener("scroll", () => {
   const graph = document.querySelector(".content_partners_wrap");
   let graphAbt;
@@ -122,6 +124,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* banner swiper */
+// 흐르는 배너
 const swiper = new Swiper("#swiper", {
   loop: true,
   spaceBetween: 20,
@@ -135,7 +138,7 @@ const swiper = new Swiper("#swiper", {
 });
 
 /* header mouse event */
-//header
+//header replace 클래스 바꿔서 적용
 const header = document.querySelector(".header_inner");
 const logo = document.querySelector(".logo");
 
@@ -150,6 +153,7 @@ header.addEventListener("mouseleave", () => {
 
 
 /* header scroll event */
+// 스크롤 일정 이상 내리면 이벤트 발생
 
 const headerContainer = document.querySelector('.header_container');
 const headerInner = document.querySelector('.header_inner');
@@ -205,7 +209,11 @@ addEventListener("scroll", () => {
 // });
 
 /********************** click event **********************/
+
+
+/* site_map */
 // toggle_button
+
 const toggleBtn = document.querySelector("#toggleBtn");
 const gnbBtn = document.querySelector("#gnbBtn");
 const cancel = document.querySelector("#cancel");

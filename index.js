@@ -44,10 +44,6 @@ window.addEventListener("load", () => {
 });
 /* top_btn */
 const Top = document.querySelector(".top_button a");
-// const header = document.querySelector('#header');
-// const headerBtnA = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::after');
-// const headerBtnB = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::before');
-// const headerBtnC = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a span');
 let clientHt = document.documentElement.clientHeight;
 let service = document.querySelector("#content .content_service");
 let serviceTop = service.getBoundingClientRect().top;
@@ -56,16 +52,8 @@ let serviceTop = service.getBoundingClientRect().top;
 addEventListener("scroll", () => {
   if (window.pageYOffset >= serviceTop) {
     Top.classList.add("on");
-    // header.classList.add("active");
-    // headerBtnA.classList.add("active");
-    // headerBtnB.classList.add("active");
-    // headerBtnC.classList.add("active");
   } else if (window.pageYOffset < serviceTop) {
     Top.classList.remove("on");
-    // header.classList.remove("active");
-    // headerBtnA.classList.remove("active");
-    // headerBtnB.classList.remove("active");
-    // headerBtnC.classList.remove("active");
   }
 });
 
@@ -168,7 +156,7 @@ const headerInner = document.querySelector('.header_inner');
 // console.log(serviceRect)
 // console.log(scrollY);
 addEventListener("scroll", () => {
-  if (window.pageYOffset >= serviceTop) {
+  if (window.pageYOffset >= serviceTop - 300) {
     headerInner.classList.add("scroll");
     header.classList.replace('header_transparent', 'header_sticked');
     logo.classList.replace('logo_default','logo_filled');
@@ -179,24 +167,7 @@ addEventListener("scroll", () => {
   }
 });
 
-/* nav_list mouse over */
-
-/* const navList = document.querySelectorAll('.nav_list');
-const navMenu = document.querySelectorAll('.navmenu');
-
-navList.forEach((list) => {
-  list.addEventListener('mouseenter', () => {
-    navMenu.forEach((menu) => {
-      menu.classList.add('located');
-    })
-  })
-  list.addEventListener('mouseout',()=>{
-    navMenu.forEach((menu)=>{
-      menu.classList.remove('located');
-    })
-  })
-})
- */
+ 
 /********************** scroll event **********************/
 // addEventListener("scroll", () => {
 //   let num = headerInner.offsetTop;

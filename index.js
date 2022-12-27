@@ -129,6 +129,7 @@ listItem.forEach((item) => {
 window.addEventListener("scroll", () => {
   const graph = document.querySelector(".content_partners_wrap");
   let graphAbt;
+  // getBoundingClinetRect 뷰포트 상대적 정보
   graphAbt = window.pageYOffset + graph.getBoundingClientRect().top;
   // console.log(graphAbt);
   // console.log(window.pageYOffset);
@@ -189,18 +190,18 @@ const swiper = new Swiper("#swiper", {
 //   }
 // });
 
-const topBtn = document.querySelector("#topBtn");
-topBtn.style.display = "none";
-addEventListener("scroll", () => {
-  let footerOffsetTop = footer.offsetTop;
-  let clientHt = document.documentElement.clientHeight;
-  let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
-  if (scrollY > result) {
-    topBtn.style.display = "block";
-  } else if (scrollY <= result) {
-    topBtn.style.display = "none";
-  }
-});
+// const topBtn = document.querySelector("#topBtn");
+// topBtn.style.display = "none";
+// addEventListener("scroll", () => {
+//   let footerOffsetTop = footer.offsetTop;
+//   let clientHt = document.documentElement.clientHeight;
+//   let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
+//   if (scrollY > result) {
+//     topBtn.style.display = "block";
+//   } else if (scrollY <= result) {
+//     topBtn.style.display = "none";
+//   }
+// });
 
 /********************** click event **********************/
 toggleBtn.addEventListener("click", (e) => {

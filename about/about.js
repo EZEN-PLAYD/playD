@@ -32,14 +32,5 @@ const mySwiper = new Swiper("#mySwiper", {
     el: ".history_progressbar",
     type: "progressbar",
   },
-  sliedsPerView: 1,
-  breakpoints: {
-    580: {
-      sliedsPerView: 2,
-    },
-    1200: {
-      sliedsPerView: 3,
-    },
-  },
+  sliedsPerView: 3,
 });
-

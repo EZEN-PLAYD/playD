@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(../common/style/playD_Fonts.css);
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -9,7 +9,6 @@ body {
   font-family: "NotoSans-DemiLight", "Malgun Gothic", Dotum, "돋움",
     AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "굴림", arial, sans-serif;
 }
-
 
 /******************** header ********************/
 
@@ -22,7 +21,6 @@ header {
   top: 0;
   box-sizing: border-box;
   transition: 0.4s;
-  
 }
 header .gnb_header_container {
   display: none;
@@ -47,7 +45,8 @@ header .header_container .header_inner .header_logo .logo {
   width: 139px;
   height: 27px;
   color: transparent;
-  background: url(../images/header/common/logo-header__filled.png) no-repeat 50% / contain;
+  background: url(../images/header/common/logo-header__filled.png) no-repeat 50% /
+    contain;
   transition: 0.3s;
 }
 header .header_container .header_inner .nav {
@@ -62,7 +61,6 @@ header .header_container .header_inner .nav .nav_list {
   align-items: center;
   justify-content: center;
   position: relative;
-
 }
 header .header_container .header_inner .nav .nav_list h2 {
   /* font-family: "Noto Sans KR", sans-serif;
@@ -102,7 +100,14 @@ header .header_container .header_inner .nav .nav_list:hover .navmenu {
   opacity: 1;
   top: 100px;
 }
-header .header_container .header_inner .nav .nav_list:hover .navmenu .navmenu_link a {
+header
+  .header_container
+  .header_inner
+  .nav
+  .nav_list:hover
+  .navmenu
+  .navmenu_link
+  a {
   color: rgb(136, 136, 136);
 }
 header .header_container .header_inner .nav .nav_list:hover::after {
@@ -449,7 +454,6 @@ header .header_container #navmenuBg {
 #history_wrapper {
   max-width: 1200px;
   margin: 150px auto 50px;
-
   padding-bottom: 150px;
   max-width: 100vw;
   position: relative;
@@ -458,12 +462,12 @@ header .header_container #navmenuBg {
   overflow: hidden;
 }
 #history_wrapper .history_inner {
-  content: "";
   max-width: 1200px;
   overflow: visible;
   margin-left: auto;
   margin-right: auto;
   padding-top: 150px;
+  /* max-width: 580px; */
 }
 #history_wrapper .history_title {
   margin-bottom: 10px;
@@ -485,20 +489,16 @@ header .header_container #navmenuBg {
 
 /* history swiper-button */
 #container #mySwiper {
-  margin-top: 20px;
+  margin: 20px auto 0;
   overflow: visible;
-}
-#mySwiper {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  overflow: hidden;
   padding: 0;
   z-index: 1;
+  width: 100%;
 }
 #mySwiper .swiper-wrapper {
   position: relative;
-  width: 100%;
+  width: 1200px;
   height: 100%;
   z-index: 1;
   display: flex;
@@ -530,12 +530,10 @@ header .header_container #navmenuBg {
   transition: 0.3s all ease-in-out;
   background: #ea2126;
   display: block;
-  /* width: 260px; */
 }
 
 .history_box {
   max-width: 560px;
-
   flex-shrink: 0;
   /* backface-visibility: hidden; */
   /* transform: translateZ(0); */
@@ -802,7 +800,13 @@ footer .footer_inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* footer_inner_wrap */
+  position: relative;
+}
+footer .footer_inner .footer_top_border {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 95px;
 }
 footer .footer_inner .footer_inner_wrap {
   max-width: 1200px;
@@ -817,7 +821,6 @@ footer .footer_inner .footer_inner_wrap .footer_top {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 footer .footer_inner .footer_inner_wrap .footer_top .footer_logo {
   width: 110px;
@@ -880,7 +883,12 @@ footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_left {
 footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_left li {
   margin-bottom: 9px;
 }
-footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_left .copyright {
+footer
+  .footer_inner
+  .footer_inner_wrap
+  .footer_bottom
+  .footer_contact_left
+  .copyright {
   margin: 36px 0 9px;
   color: #666666;
 }
@@ -888,12 +896,22 @@ footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_right {
   grid-column: 3/5;
   justify-self: end;
 }
-footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_right .contact_num {
+footer
+  .footer_inner
+  .footer_inner_wrap
+  .footer_bottom
+  .footer_contact_right
+  .contact_num {
   font-weight: 700;
   font-size: 32px;
   padding: 5px 0;
 }
-footer .footer_inner .footer_inner_wrap .footer_bottom .footer_contact_right .contact_time {
+footer
+  .footer_inner
+  .footer_inner_wrap
+  .footer_bottom
+  .footer_contact_right
+  .contact_time {
   color: #888888;
   margin-top: 6px;
 }
@@ -992,13 +1010,34 @@ footer .top_btn a img {
   display: block;
   margin-bottom: 32px;
 }
-#gnbBtn.active header .gnb_header_container .header_inner .nav .nav_list .navmenu {
+#gnbBtn.active
+  header
+  .gnb_header_container
+  .header_inner
+  .nav
+  .nav_list
+  .navmenu {
   justify-content: space-between;
 }
-#gnbBtn.active header .gnb_header_container .header_inner .nav .nav_list .navmenu .navmenu_link {
+#gnbBtn.active
+  header
+  .gnb_header_container
+  .header_inner
+  .nav
+  .nav_list
+  .navmenu
+  .navmenu_link {
   margin-bottom: 15px;
 }
-#gnbBtn.active header .gnb_header_container .header_inner .nav .nav_list .navmenu .navmenu_link a {
+#gnbBtn.active
+  header
+  .gnb_header_container
+  .header_inner
+  .nav
+  .nav_list
+  .navmenu
+  .navmenu_link
+  a {
   /* font-family: "Noto Sans KR", sans-serif;
   font-weight: 500; */
   font-family: "NotoSans-Medium";

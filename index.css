@@ -78,7 +78,7 @@ header .header_container .header_inner .nav {
   display: flex;
 }
 header .header_container .header_inner .nav .nav_list:hover {
-  /* overflow: visible; */
+  overflow: visible;
 }
 header .header_container .header_inner .nav .nav_list {
   height: 100%;
@@ -88,7 +88,7 @@ header .header_container .header_inner .nav .nav_list {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 header .header_container .header_inner .nav .nav_list h2 {
   /* font-family: "Noto Sans KR", sans-serif;
@@ -98,14 +98,14 @@ header .header_container .header_inner .nav .nav_list h2 {
   letter-spacing: -1px;
   display: block;
 }
-header .header_container .header_sticked .nav .nav_list .navmenu.located {
+/* header .header_container .header_sticked .nav .nav_list .navmenu.located {
   display: flex !important;
-}
+} */
 header .header_container .header_inner .nav .nav_list .navmenu {
   z-index: 998; 
   width: 100vw;
   height:100%;
-  display: none;
+  display: flex;
   /* flex로 변경 예정 */
   flex-direction: row;
   align-items: center;
@@ -1551,8 +1551,13 @@ footer .top_btn a img {
 
 
 /******************** active - js ********************/
-.header_container.scroll {
-  height: 60px;
+header .header_container .scroll .header_logo .logo {
+    width: 108px;
+    height: 21px;
+    transition: all 0.2s;
+}
+header .header_container .scroll {
+  height: 60px !important;
 }
 
 .header_sticked .nav .nav_list .navmenu{
@@ -1614,7 +1619,7 @@ header .header_container .header_sticked .nav .toggle_btn a span{
 #gnbBtn.active header .gnb_header_container .header_inner .header_logo {
   width: 139px;
   height: 100px;
-  background: url(../images/header/common/logo.png) no-repeat 50% / contain;
+  background: url(./images/header/common/logo-header.png) no-repeat 50% / contain;
   position: absolute;
   left: 50px;
   text-indent: -9999px;

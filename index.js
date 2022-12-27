@@ -162,25 +162,25 @@ header.addEventListener("mouseleave", () => {
 
 
 /* header scroll event */
+
 const headerContainer = document.querySelector('.header_container');
-// let clientHt = document.documentElement.clientHeight;
-// let service = document.querySelector("#content .content_service");
-// let serviceTop = service.getBoundingClientRect().top;
+const headerInner = document.querySelector('.header_inner');
 // console.log(serviceRect)
 // console.log(scrollY);
 addEventListener("scroll", () => {
   if (window.pageYOffset >= serviceTop) {
-    headerContainer.classList.add("scroll");
+    headerInner.classList.add("scroll");
     header.classList.replace('header_transparent', 'header_sticked');
     logo.classList.replace('logo_default','logo_filled');
   } else if (window.pageYOffset < serviceTop) {
-    headerContainer.classList.remove("scroll");
+    headerInner.classList.remove("scroll");
     header.classList.replace('header_sticked', 'header_transparent');
     logo.classList.replace('logo_filled', 'logo_default');
   }
 });
 
 /* nav_list mouse over */
+
 /* const navList = document.querySelectorAll('.nav_list');
 const navMenu = document.querySelectorAll('.navmenu');
 
@@ -233,25 +233,17 @@ navList.forEach((list) => {
 //   }
 // });
 
-// const topBtn = document.querySelector("#topBtn");
-// topBtn.style.display = "none";
-// addEventListener("scroll", () => {
-//   let footerOffsetTop = footer.offsetTop;
-//   let clientHt = document.documentElement.clientHeight;
-//   let result = footerOffsetTop - clientHt - footer.clientHeight - headerInner.clientHeight;
-//   if (scrollY > result) {
-//     topBtn.style.display = "block";
-//   } else if (scrollY <= result) {
-//     topBtn.style.display = "none";
-//   }
-// });
-
 /********************** click event **********************/
-// toggleBtn.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   gnbBtn.classList.toggle("active");
-// });
-// cancel.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   gnbBtn.classList.remove("active");
-// });
+// toggle_button
+const toggleBtn = document.querySelector("#toggleBtn");
+const gnbBtn = document.querySelector("#gnbBtn");
+const cancel = document.querySelector("#cancel");
+
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  gnbBtn.classList.toggle("active");
+});
+cancel.addEventListener("click", (e) => {
+  e.preventDefault();
+  gnbBtn.classList.remove("active");
+});

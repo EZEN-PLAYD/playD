@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
   visualImg[0].style.opacity = 1;
 });
 /* top_btn */
-const Top = document.querySelector(".top_button");
+const Top = document.querySelector(".top_button a");
 const header = document.querySelector('#header');
 const headerBtnA = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::after');
 const headerBtnB = document.querySelector('#header .header_container .header_inner .nav .toggle_btn a i::before');
@@ -62,16 +62,16 @@ let serviceTop = service.getBoundingClientRect().top;
 addEventListener("scroll", () => {
   if (window.pageYOffset >= serviceTop) {
     Top.classList.add("on");
-    header.classList.add("active");
-    headerBtnA.classList.add("active");
-    headerBtnB.classList.add("active");
-    headerBtnC.classList.add("active");
+    // header.classList.add("active");
+    // headerBtnA.classList.add("active");
+    // headerBtnB.classList.add("active");
+    // headerBtnC.classList.add("active");
   } else if (window.pageYOffset < serviceTop) {
     Top.classList.remove("on");
     // header.classList.remove("active");
-    headerBtnA.classList.remove("active");
-    headerBtnB.classList.remove("active");
-    headerBtnC.classList.remove("active");
+    // headerBtnA.classList.remove("active");
+    // headerBtnB.classList.remove("active");
+    // headerBtnC.classList.remove("active");
   }
 });
 

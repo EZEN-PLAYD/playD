@@ -1,3 +1,5 @@
+@import url(./common/style/playD_Fonts.css);
+
 html {
   scroll-behavior: smooth;
 }
@@ -436,12 +438,18 @@ footer .footer_inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* footer_inner_wrap */
+  position: relative;
+}
+footer .footer_inner .footer_top_border {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 95px;
 }
 footer .footer_inner .footer_inner_wrap {
   max-width: 1200px;
+
   /* footer_top */
-  /* footer_bottom */
 }
 footer .footer_inner .footer_inner_wrap .footer_top {
   /* font-family: "Noto Sans KR", sans-serif;
@@ -451,7 +459,7 @@ footer .footer_inner .footer_inner_wrap .footer_top {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 footer .footer_inner .footer_inner_wrap .footer_top .footer_logo {
   width: 110px;
@@ -498,6 +506,8 @@ footer .footer_inner .footer_inner_wrap .footer_top .footer_sns li a {
 footer .footer_inner .footer_inner_wrap .footer_top .footer_sns li a img {
   opacity: 0.5;
 }
+
+/* footer_bottom */
 footer .footer_inner .footer_inner_wrap .footer_bottom {
   /* font-family: "Noto Sans KR", sans-serif;
   font-weight: 400; */

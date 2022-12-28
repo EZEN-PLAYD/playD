@@ -9,7 +9,7 @@ header {
   z-index: 1;
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #dddddd;
+  /* border-bottom: 1px solid #dddddd; */
   position: fixed;
   top: 0;
   box-sizing: border-box;
@@ -53,7 +53,12 @@ header .header_container .header_inner .nav .nav_list {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
+header .header_container .header_inner .nav .nav_list:hover {
+  overflow: visible;
+}
+
 header .header_container .header_inner .nav .nav_list h2 {
   /* font-family: "Noto Sans KR", sans-serif;
   font-weight: 700; */
@@ -65,17 +70,37 @@ header .header_container .header_inner .nav .nav_list h2 {
 header .header_container .header_inner .nav .nav_list .navmenu {
   z-index: 1;
   width: 100vw;
-  height: 100px;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   position: absolute;
   top: 100px;
   left: 0;
+  transition: 0.5s;
   opacity: 0;
-  transition: 0.3s;
+}
+header .header_container .header_inner .nav .nav_list:hover .navmenu {
+  opacity: 1;
+}
+
+header .header_container .header_inner .nav .nav_list .navmenu .navmenu_bg {
+  width: 2000%;
+  height: 0;
+  background-color: #fff;
+  /* border-bottom: 1px solid #dddddd; */
+  transform: translateX(-2000px);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+}
+header .header_container .header_inner .nav .nav_list:hover .navmenu .navmenu_bg {
+  height: 100px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link {
+  z-index: 1;
   margin-right: 30px;
 }
 header .header_container .header_inner .nav .nav_list .navmenu .navmenu_link a {
@@ -104,6 +129,7 @@ header .header_container .header_inner .nav .nav_list:hover::after {
   border-bottom: 4px solid #ea2126;
   padding: 0 5px;
 }
+
 header .header_container .header_inner .nav .list5 {
   display: none;
 }
@@ -151,6 +177,7 @@ header .header_container .header_inner .nav .toggle_btn a i::after {
   position: absolute;
   bottom: 0;
 }
+/*
 header .header_container #navmenuBg {
   box-sizing: border-box;
   width: 100%;
@@ -160,6 +187,7 @@ header .header_container #navmenuBg {
   background-color: #fff;
   transition: 0.4s;
 }
+*/
 
 /******************** main ********************/
 .main_bg {

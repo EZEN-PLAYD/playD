@@ -25,7 +25,7 @@ header .header_container .header_inner {
   margin: 0 1vw;
   display: flex;
   justify-content: space-between;
-  transition: 0.4s;
+  transition: 0.3s;
   /* header_logo */
   /* header_navigation */
 }
@@ -59,8 +59,6 @@ header .header_container .header_inner .nav .nav_list:hover {
   overflow: visible;
 }
 header .header_container .header_inner .nav .nav_list h2 {
-  /* font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700; */
   font-family: "NotoSans-Bold";
   font-size: 18px;
   letter-spacing: -1px;
@@ -107,7 +105,6 @@ header .header_container .header_inner .nav .nav_list:hover h2 {
 }
 header .header_container .header_inner .nav .nav_list:hover .navmenu {
   height: 100px;
-  /* top: 100px; */
 }
 header .header_container .header_inner .nav .nav_list:hover .navmenu .navmenu_link a {
   color: rgb(136, 136, 136);

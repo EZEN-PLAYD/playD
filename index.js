@@ -1,4 +1,3 @@
-
 /* visual  랜덤 배경 색, 이미지 전환 */
 window.addEventListener("load", () => {
   const visual = document.querySelector("#container #visual");
@@ -61,7 +60,7 @@ addEventListener("scroll", () => {
 // console.log(window.innerHeight)
 
 /* service */
-//content list box 한개씩 날라오는 스크롤 이벤트 
+//content list box 한개씩 날라오는 스크롤 이벤트
 let serviceBottom = service.getBoundingClientRect().bottom;
 const serviceBox = document.querySelectorAll(".content_service_wrap_list_box");
 
@@ -77,9 +76,7 @@ addEventListener("scroll", () => {
 
 /* perfomance mouse event */
 // 숨겨진 오른쪽 사이드 컨텐츠 나타내기
-const boxItem = document.querySelectorAll(
-  ".content_performance_left, .content_performance_right"
-);
+const boxItem = document.querySelectorAll(".content_performance_left, .content_performance_right");
 boxItem.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("box_visible");
@@ -98,9 +95,7 @@ listItem.forEach((item) => {
       list.classList.remove("accordian_active");
     }); // .accordian_active 남아있으면 삭제
     let result = item.classList.contains("accordian_active");
-    !result
-      ? item.classList.add("accordian_active")
-      : item.classList.remove("accordian_active");
+    !result ? item.classList.add("accordian_active") : item.classList.remove("accordian_active");
   });
   item.addEventListener("mouseleave", () => {
     listItem.forEach((list) => {
@@ -144,73 +139,65 @@ const header = document.querySelector(".header_inner");
 const logo = document.querySelector(".logo");
 
 header.addEventListener("mouseenter", () => {
-  header.classList.replace('header_transparent', 'header_sticked');
-  logo.classList.replace('logo_default','logo_filled');
+  header.classList.replace("header_transparent", "header_sticked");
+  logo.classList.replace("logo_default", "logo_filled");
 });
 header.addEventListener("mouseleave", () => {
-  header.classList.replace('header_sticked', 'header_transparent');
-  logo.classList.replace('logo_filled', 'logo_default');
+  header.classList.replace("header_sticked", "header_transparent");
+  logo.classList.replace("logo_filled", "logo_default");
 });
-
 
 /* header scroll event */
 // 스크롤 일정 이상 내리면 이벤트 발생
 
-const headerContainer = document.querySelector('.header_container');
-const headerInner = document.querySelector('.header_inner');
+// header
+const headerContainer = document.querySelector(".header_container");
+const headerInner = document.querySelector(".header_inner");
+// sub_menu
+const navmenu1 = document.querySelector("#navmenu1");
+const navmenu2 = document.querySelector("#navmenu2");
+const navmenu3 = document.querySelector("#navmenu3");
+const navmenu4 = document.querySelector("#navmenu4");
+
 // console.log(serviceRect)
 // console.log(scrollY);
 addEventListener("scroll", () => {
   if (window.pageYOffset >= serviceTop - 300) {
     headerInner.classList.add("scroll");
-    header.classList.replace('header_transparent', 'header_sticked');
-    logo.classList.replace('logo_default','logo_filled');
+    header.classList.replace("header_transparent", "header_sticked");
+    logo.classList.replace("logo_default", "logo_filled");
+    // navmenu1
+    navmenu1.style.top = "60px";
+    navmenu1.style.height = "60px";
+    // navmenu2
+    navmenu2.style.top = "60px";
+    navmenu2.style.height = "60px";
+    // navmenu3
+    navmenu3.style.top = "60px";
+    navmenu3.style.height = "60px";
+    // navmenu4
+    navmenu4.style.top = "60px";
+    navmenu4.style.height = "60px";
   } else if (window.pageYOffset < serviceTop) {
     headerInner.classList.remove("scroll");
-    header.classList.replace('header_sticked', 'header_transparent');
-    logo.classList.replace('logo_filled', 'logo_default');
+    header.classList.replace("header_sticked", "header_transparent");
+    logo.classList.replace("logo_filled", "logo_default");
+    // navmenu1
+    navmenu1.style.top = "100px";
+    navmenu1.style.height = "100px";
+    // navmenu2
+    navmenu2.style.top = "100px";
+    navmenu2.style.height = "100px";
+    // navmenu3
+    navmenu3.style.top = "100px";
+    navmenu3.style.height = "100px";
+    // navmenu4
+    navmenu4.style.top = "100px";
+    navmenu4.style.height = "100px";
   }
 });
 
- 
-/********************** scroll event **********************/
-// addEventListener("scroll", () => {
-//   let num = headerInner.offsetTop;
-//   if (scrollY > num) {
-//     logo.style.width = "108px";
-//     headerInner.classList.add("active");
-//     // navmenu1
-//     navmenu1.style.top = "60px";
-//     navmenu1.style.height = "60px";
-//     // navmenu2
-//     navmenu2.style.top = "60px";
-//     navmenu2.style.height = "60px";
-//     // navmenu3
-//     navmenu3.style.top = "60px";
-//     navmenu3.style.height = "60px";
-//     // navmenu4
-//     navmenu4.style.top = "60px";
-//     navmenu4.style.height = "60px";
-//   } else if (scrollY <= num) {
-//     logo.style.width = "139px";
-//     headerInner.classList.remove("active");
-//     // navmenu1
-//     navmenu1.style.top = "100px";
-//     navmenu1.style.height = "100px";
-//     // navmenu2
-//     navmenu2.style.top = "100px";
-//     navmenu2.style.height = "100px";
-//     // navmenu3
-//     navmenu3.style.top = "100px";
-//     navmenu3.style.height = "100px";
-//     // navmenu4
-//     navmenu4.style.top = "100px";
-//     navmenu4.style.height = "100px";
-//   }
-// });
-
 /********************** click event **********************/
-
 
 /* site_map */
 // toggle_button

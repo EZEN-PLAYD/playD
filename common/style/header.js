@@ -8,6 +8,7 @@ const navmenu2 = document.querySelector("#navmenu2");
 const navmenu3 = document.querySelector("#navmenu3");
 const navmenu4 = document.querySelector("#navmenu4");
 
+// 스크롤시 헤더&서브메뉴 높이 조정
 addEventListener("scroll", () => {
   let num = headerInner.offsetTop;
   if (scrollY > num) {
@@ -44,6 +45,7 @@ addEventListener("scroll", () => {
 });
 
 // top_button
+// 스크롤 내리면 지정 위치에서 top_button 나타나기
 const footer = document.querySelector("footer");
 const topBtn = document.querySelector("#topBtn");
 
@@ -61,6 +63,7 @@ addEventListener("scroll", () => {
 
 /********************** click event **********************/
 // toggle_button
+// 버튼 클릭시 site_map 여닫기
 const toggleBtn = document.querySelector("#toggleBtn");
 const gnbBtn = document.querySelector("#gnbBtn");
 const cancel = document.querySelector("#cancel");

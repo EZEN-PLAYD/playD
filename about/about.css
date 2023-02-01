@@ -101,7 +101,7 @@ header .header_container .header_inner .nav .nav_list .navmenu .navmenu_bg {
   background-color: #fff;
   border-bottom: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
-  transform: translateX(-2000px);
+  transform: translateX(-90vw);
   position: absolute;
   top: 0;
 }
